@@ -1,0 +1,9 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("assets/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
+  background-size: cover;
+}

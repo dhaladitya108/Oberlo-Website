@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+:root {
+  --primary: #7433ff;
+  --secondary: #ffa3fd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f4f3;
+  font-family: "Manrope", sans-serif;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.73)
+    ),
+    url("assets/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 800;
+  font-size: 4.5rem;
+}
+
+.is-btn {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.9em 1.9375em;
+  background: linear-gradient(99.09deg, #7c39ff 0%, #f79cfe 100%);
+  box-shadow: inset -6px -3px 5px #9863fa, inset 3px 6px 6px #db86fe,
+    inset 4px 2px 6px #7c3aff, inset 0px 2px 4px #d782fe;
+  border-radius: 20px;
+}
+
+.is-btn:hover {
+  color: white;
+  transform: scale(1.02);
+  background: linear-gradient(99.09deg, #f79cfe 0%, #7c39ff 100%);
+  box-shadow: inset 0px 2px 4px #d782fe, inset 4px 2px 6px #7c3aff,
+    inset -2px 0px 7px rgba(219, 134, 254, 0.6), inset -4px -3px 5px #9863fa;
+}
+
+/* linear gradient */
+
+.lg-dtl {
+  background: -webkit-linear-gradient(120deg, #f69cfe 30%, #7d3aff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lg-ltd {
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary) 70%,
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* header - navigation bar */
+
+.nav-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  height: 70px;
+  line-height: 1.3rem;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0rem auto;
+}
+
+.navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 1.375rem;
+}
+
+.nav-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "liga" off;
+  margin-right: 1.5rem;
+}
+
+.nav-item a {
+  color: var(--primary);
+  transition: all 500ms ease;
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid var(--primary);
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(116, 51, 255, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--primary);
+}
+
+/* hero section */
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0rem auto;
+  margin-top: 8rem;
+}
+
+.hero-section .left-content p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4rem;
+}
+
+.hero-section .left-content .is-btn {
+  font-size: 1.2rem;
+  padding: 0.9em 2em;
+}
+
+/* section2 */
+
+#section-2 {
+  position: relative;
+}
+
+.section2-container {
+  margin-top: 12.7rem;
+}
+
+.section2-container h1 {
+  color: var(--primary);
+}
+
+.section2-container p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.circle {
+  position: absolute;
+  top: -70px;
+  z-index: -1;
+}
+
+/* input fields */
+
+.input-field {
+  margin: 1rem 0rem;
+}
+
+.input-field input {
+  background: #eff0f7;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  min-width: 200px;
+  width: 15vw;
+}
+
+.input-field p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary);
+  position: relative;
+  top: 7px;
+}
+
+/* login section */
+
+.login-container {
+  max-width: 1400px;
+  margin: 4rem auto;
+}
+
+.login-section .left-column {
+  background: linear-gradient(147.07deg, #7a38ff -1.94%, #f89dfe 133.52%);
+  border-radius: 27px 0px 0px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5em 3.625em;
+}
+
+.login-section .left-column p {
+  font-size: clamp(1.5rem, 10vw, 1.9rem);
+  color: #ffffff;
+  width: 80%;
+}
+
+.login-section .right-column {
+  background: linear-gradient(
+    110.92deg,
+    rgba(255, 255, 255, 0.7) 239.12%,
+    rgba(255, 255, 255, 0.3) 341.98%
+  );
+  backdrop-filter: blur(25px);
+  border-radius: 0px 27px 27px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-section .right-column h5 {
+  font-weight: 600;
+  font-size: 28px;
+  background: -webkit-linear-gradient(120deg, var(--secondary), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4rem;
+}
+
+.login-section .right-column .is-btn {
+  font-size: 1rem;
+  padding: 0.8em 2.3em;
+}
+
+/* register section */
+
+#register-section {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.register-container {
+  width: clamp(600px, 60vw, 1000px);
+  background: linear-gradient(
+    110.92deg,
+    rgba(255, 255, 255, 0.7) 239.12%,
+    rgba(255, 255, 255, 0.3) 341.98%
+  );
+  backdrop-filter: blur(25px);
+  border-radius: 27px;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid var(--primary);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.two-input-fields {
+  display: flex;
+}
+
+.register-container h5 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "liga" off;
+}
+
+.register-btn {
+  text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+  /* section 2 */
+  .circle {
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    z-index: -1;
+  }
+
+  .section2-container h1 {
+    margin-left: 10px;
+    font-size: 4rem;
+  }
+  .section2-container p {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .login-section .left-column p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .circle {
+    position: absolute;
+    top: -70px;
+    left: -170px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* nav bar */
+
+  .navbar-collapse .nav-item {
+    margin: 7px 0;
+  }
+  .navbar-collapse .nav-item:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .nav-btn {
+    margin-bottom: 20px;
+  }
+
+  nav .is-btn {
+    padding: 0;
+    font-size: 14px;
+    color: var(--primary);
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    font-feature-settings: "liga" off;
+    line-height: 20px;
+  }
+
+  nav .is-btn:hover {
+    color: var(--primary);
+    transform: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  .nav-item a:hover {
+    border: 0;
+  }
+
+  /* login page */
+
+  .login-container {
+    margin: 10vw;
+  }
+
+  .login-section .left-column {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .login-section .right-column {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* main page */
+  .hero-container {
+    text-align: center;
+  }
+  .hero-container .left-content {
+    margin-bottom: 2rem;
+  }
+
+  .section2-container {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .section2-container img {
+    position: relative;
+    top: 70px;
+    margin-bottom: 7rem;
+  }
+
+  /* login */
+  .login-container {
+    margin: 0;
+  }
+
+  .login-container .left-column {
+    border-radius: 0;
+  }
+  .login-container .right-column {
+    border-radius: 0;
+  }
+
+  /* register section */
+
+  .register-container {
+    border-radius: 0;
+  }
+
+  .two-input-fields {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .register-container {
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .circle {
+    display: none !important;
+  }
+}
