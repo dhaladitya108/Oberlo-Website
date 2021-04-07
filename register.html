@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaperone</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bg.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaperone</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bg.css" />
 </head>
+
 <body>
-    
   <!-- navbar -->
 
   <header>
-        
     <div class="nav-container">
-        <nav class="navbar navbar-expand-lg my-auto bg-light">
-            <div class="container">
-              <a class="navbar-brand lg-dtl" href="index.html">Chaperone.</a>
-              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
-                  </li>
-                </ul>
-                <a href="login.html" class="is-btn">Login</a>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg my-auto bg-light">
+        <div class="container">
+          <a class="navbar-brand lg-dtl" href="index.html">Oberlo.</a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+            <a href="login.html" class="is-btn">Login</a>
+          </div>
+        </div>
+      </nav>
     </div>
-
   </header>
 
-   <main>
-
+  <main>
     <!-- register section -->
     <section id="register-section">
-        <div class="register-container">
-              <h5 class="lg-dtl mb-5">Register Here</h5>
+      <div class="register-container">
+        <h5 class="lg-dtl mb-5">Register Here</h5>
 
-              <div class="input-fields">
+        <div class="input-fields">
+          <div class="input-field">
+            <p>Name</p>
+            <input type="text" />
+          </div>
 
-                <div class="input-field">
-                    <p>Name</p>
-                    <input type="text" />
-                </div>
+          <div class="two-input-fields">
+            <div class="input-field me-5">
+              <p>Email</p>
+              <input type="email" />
+            </div>
 
-                <div class="two-input-fields">
-                  <div class="input-field me-5">
-                      <p>Email</p>
-                      <input type="email" />
-                  </div>
+            <div class="input-field">
+              <p>Phone</p>
+              <input type="number" />
+            </div>
+          </div>
 
-                  <div class="input-field">
-                    <p>Phone</p>
-                    <input type="number" />
-                  </div>
-                </div>
+          <div class="input-field mb-5">
+            <p>Password</p>
+            <input type="password" />
+          </div>
+        </div>
 
-                <div class="input-field mb-5">
-                    <p>Password</p>
-                    <input type="password" />
-                </div>
-
-              </div>
-
-              <a href="#" class="is-btn register-btn">Register</a>
-
-        
+        <a href="#" class="is-btn register-btn">Register</a>
+      </div>
     </section>
+  </main>
 
-
-   </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
